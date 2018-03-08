@@ -1,0 +1,34 @@
+*.ps-heading{
+	color:white; 
+	font-size: 48pt; 
+	font-family: 'Montserrat';
+	font-weight: 300;
+}
+*.ps-heading-2{
+	color:white; 
+	font-size: 38pt; 
+	font-family: 'Montserrat';
+	font-weight: 300;
+}
+*.ps-white-font{
+	color:white; 
+	font-family: 'Montserrat';
+	font-weight: 300; 
+}
+html, body{
+	background-color: #fff;
+}
+*.ps-font{
+	font-family: 'Montserrat';
+	font-weight: 300; 
+}
+*.ps-font-2 > li{
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 18pt; 
+}
+.center2{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateX(-50%);
+}
