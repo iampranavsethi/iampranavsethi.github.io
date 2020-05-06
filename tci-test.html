@@ -4,7 +4,23 @@
 		<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/js-cookie@2.2.1/src/js.cookie.min.js'></script>
 	</head>
 	<body>
-		this is on pranavsethi.com
+		this is on pranavsethi.com     <button onclick="requestAccess()">request storage access</button>
+		<script type="text/javascript">
+			function requestAccess(){
+			    var promise = document.requestStorageAccess();
+			      promise.then(
+				function () {
+				    console.log('granted');
+				    Cookies.set('domain2', 'domain-b-frontend');
+				    document.getElementById('cookie2').innerHTML = Cookies.get('domain2');
+				},
+				function () {
+				  console.log('failed');
+				}
+			      );
+
+			}
+		    </script>
 		<hr>
 		<table width="100%">
 			<tr>
