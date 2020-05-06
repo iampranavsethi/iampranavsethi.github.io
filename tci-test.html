@@ -4,21 +4,10 @@
 		<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/js-cookie@2.2.1/src/js.cookie.min.js'></script>
 	</head>
 	<body>
-		this is on pranavsethi.com     <button onclick="requestAccess()">request storage access</button>
+		this is on pranavsethi.com     <button onclick="requestAccess1()">request popup</button>
 		<script type="text/javascript">
-			function requestAccess(){
-			    var promise = document.requestStorageAccess();
-			      promise.then(
-				function () {
-				    console.log('granted');
-				    Cookies.set('domain2', 'domain-b-frontend');
-				    document.getElementById('cookie2').innerHTML = Cookies.get('domain2');
-				},
-				function () {
-				  console.log('failed');
-				}
-			      );
-
+			function requestAccess1(){
+				var w = window.open('https://whispering-ridge-71998.herokuapp.com/', 'win');
 			}
 		    </script>
 		<hr>
