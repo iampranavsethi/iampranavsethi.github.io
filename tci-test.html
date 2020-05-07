@@ -4,8 +4,11 @@
 		<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/js-cookie@2.2.1/src/js.cookie.min.js'></script>
 	</head>
 	<body>
-		this is on pranavsethi.com     <button onclick="requestAccess1()">request popup</button>
+		this is on pranavsethi.com     <button onclick="requestAccess1()">request popup</button> <button onclick="requestAccess2()">request resource from ext url</button>
 		<script type="text/javascript">
+			function requestAccess2(){
+				document.getElementById('appstore').src='https://whispering-ridge-71998.herokuapp.com/appstore.png';
+			}
 			function requestAccess1(){
 				var w = window.open('https://whispering-ridge-71998.herokuapp.com/', 'win');
 			}
@@ -22,7 +25,7 @@
 				<td width="33%"> <iframe src="https://whispering-ridge-71998.herokuapp.com/"></iframe> 
 						<iframe sandbox='allow-popups allow-popups-to-escape-sandbox allow-top-navigation allow-top-navigation-by-user-activation allow-modals allow-forms allow-same-origin allow-scripts allow-storage-access-by-user-activation' src="https://whispering-ridge-71998.herokuapp.com/"></iframe> 
 				</td>
-				<td width="*"> <img width='200px' src="https://whispering-ridge-71998.herokuapp.com/appstore.png" /> </td>
+				<td width="*"> <img width='200px' id='appstore' alt='appstore request' /> </td>
 			</tr>
 		</table>
 		<hr>
