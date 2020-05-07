@@ -4,8 +4,18 @@
 		<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/js-cookie@2.2.1/src/js.cookie.min.js'></script>
 	</head>
 	<body>
+		<button onclick='cpaccess()'>CP Access</button>
 		this is on pranavsethi.com     <button onclick="requestAccess1()">request popup</button> <button onclick="requestAccess2()">request resource from ext url</button>
 		<script type="text/javascript">
+			function cpaccess(){
+				var cp = window.open('https://cp-test.decisionlender.solutions/');
+			    setTimeout(()=> {
+				document.hasStorageAccess().then( 
+				    () => console.log('access granted') | cp.close(),
+				    () => console.error('access deined')
+				 )
+			    }, 2000);
+			}
 			function requestAccess2(){
 				document.getElementById('appstore').src='https://whispering-ridge-71998.herokuapp.com/appstore.png';
 			}
