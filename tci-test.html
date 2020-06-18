@@ -22,6 +22,10 @@
 			function requestAccess1(){
 				var w = window.open('https://whispering-ridge-71998.herokuapp.com/', 'win');
 			}
+			
+			function iframeLoad(){
+				alert('iframe loaded');
+			}
 		    </script>
 		<hr>
 		<table width="100%">
@@ -45,7 +49,7 @@
 					<iframe src="http://tci-cp.pranavsethi.com/cp2/cons429/" width="100%" height="500px" frameborder="0"></iframe>
 				</td>
 				<td width="50%">
-					<iframe sandbox='allow-popups allow-popups-to-escape-sandbox allow-top-navigation allow-top-navigation-by-user-activation allow-modals allow-forms allow-same-origin allow-scripts allow-storage-access-by-user-activation' src="http://cp-test.decisionlender.solutions/cp2/cons429/" width="100%" height="500px" frameborder="0"></iframe>
+					<iframe sandbox='allow-popups allow-popups-to-escape-sandbox allow-top-navigation allow-top-navigation-by-user-activation allow-modals allow-forms allow-same-origin allow-scripts allow-storage-access-by-user-activation' src="http://cp-test.decisionlender.solutions/cp2/cons429/" width="100%" height="500px" frameborder="0" onload='iframeLoad()'></iframe>
 				</td>
 			</tr>
 		</table>
