@@ -32,3 +32,6 @@ html, body{
 	top: 50%;
 	-webkit-transform: translateX(-50%);
 }
+.d-none{
+	display: none
+}
